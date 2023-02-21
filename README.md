@@ -1,6 +1,7 @@
 Repository details:
 
 Dev environment - virtualenv
+requirements.txt file prepared -> please use command "python -m pip install -r requirements.txt" in created env
 Python - 3.9
 Framework - Django (DRF)
 Database - PostgreSQL
