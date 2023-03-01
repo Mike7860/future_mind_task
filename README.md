@@ -3,7 +3,7 @@ The application allows to upload pictures with posibility of resizing them, chan
 Repository details:
 
 Dev environment - virtualenv
-requirements.txt file prepared -> please use command "python -m pip install -r requirements.txt" in created env
+requirements.txt file prepared -> please use command "python -m pip install -r requirements.txt" in created before virtual environment
 Python - 3.9.1
 Framework - Django 4.1.6 (DRF 3.14.0)
 Database - PostgreSQL
@@ -16,3 +16,4 @@ Endpoints:
 POST /images
 GET /images
 GET /images/:id
+API doc /doc
