@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_app',
     'django_filters',
-    'crispy_forms'
+    'crispy_forms',
+    'rest_framework_swagger'
 ]
 
 MIDDLEWARE = [
@@ -67,6 +68,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries': {
+            'staticfiles': 'django.templatetags.static',
+        }
         },
     },
 ]
@@ -76,7 +80,8 @@ WSGI_APPLICATION = 'drf_project.wsgi.application'
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend',],
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
 }
 
 # Database
