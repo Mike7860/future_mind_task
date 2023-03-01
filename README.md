@@ -8,7 +8,6 @@ Python - 3.9.1
 Framework - Django 4.1.6 (DRF 3.14.0)
 Database - PostgreSQL
 Storage - filesystem ("/uploads" folder)
-Tests - pytest
 API Documentation - OpenAPIv3 (swagger)
 Dev documentation - readme.md
 
